@@ -2,7 +2,7 @@ package com.simplilearn.accessmodifier;
 
 /**
  * This class demonstrate default ( no access modifier) access modifier as max package level scope.
- * @author khanw
+ * @author nagamani
  */
 public class DefaultAccessmodifier {
 
