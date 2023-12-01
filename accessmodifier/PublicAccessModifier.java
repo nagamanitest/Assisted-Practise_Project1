@@ -2,7 +2,7 @@ package com.simplilearn.accessmodifier;
 
 /**
  * This class demonstrate public access modifier as widest scope overall.
- * @author khanw
+ * @author nagamani
  */
 public class PublicAccessModifier {
 	
