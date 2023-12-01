@@ -2,7 +2,7 @@ package com.simplilearn.typecasting;
 
 /**
  * This class demonstrate Explicit TypeCast Example.
- * @author khanw
+ * @author nagamani
  */
 public class ExplicitTypeCast {
 
