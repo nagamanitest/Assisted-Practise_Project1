@@ -2,7 +2,7 @@ package com.simplilearn.loop;
 
 /**
  * This class demonstrate While Loop statement.
- * @author khanw
+ * @author nagamani
  */
 public class WhileLoop {
 	
