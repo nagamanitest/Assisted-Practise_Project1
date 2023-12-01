@@ -4,7 +4,7 @@ import com.simplilearn.typecasting.ExtendedHouse;
 
 /**
  * This class demonstrate protected access modifier as max package level scope and outside the package require inheritance.
- * @author khanw
+ * @author nagamani
  */
 public class ProtectedAccessModifer extends ExtendedHouse{
 
