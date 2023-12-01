@@ -2,7 +2,7 @@ package com.simplilearn.accessmodifier;
 
 /**
  * This class demonstrate private access modifier as limited scope to a class
- * @author khanw
+ * @author nagamani
  */
 public class PrivateAccessModifier {
 
