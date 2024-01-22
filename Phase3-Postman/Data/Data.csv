@@ -1,0 +1,4 @@
+userid,title,body
+1,How to create postman environment,Use create button or new under header menu tool to create environment
+2,How to run collection in postman,Right click on the collection and select run as collection
+3,How to create variables in collection,Go to collection under variables create variables

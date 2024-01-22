@@ -23,9 +23,9 @@
 									"\r",
 									"pm.test(\"Response Body should be JSON\", function () {\r",
 									"    var jsonData = pm.response.json();\r",
-									"    pm.expect(jsonData.page).to.eql(1);\r",
-									"    pm.expect(jsonData.per_page).to.eql(6);\r",
-									"    pm.expect(jsonData.total_pages).to.eql(2);\r",
+									"    pm.expect(jsonData.page).to.equal(2);\r",
+									"    pm.expect(jsonData.per_page).to.equal(6);\r",
+									"    pm.expect(jsonData.total_pages).to.equal(2);\r",
 									"    pm.expect(jsonData.data).to.not.null;\r",
 									"\r",
 									"});\r",
@@ -163,13 +163,13 @@
 					"script": {
 						"type": "text/javascript",
 						"exec": [
-							"pm.test(\"Validate Collections variables\",function(){",
+							"pm.test(\"Validate Collections Variables\",function(){",
 							"",
 							"    var host_url=pm.collectionVariables.get(\"username\");",
 							"    var page=pm.collectionVariables.get(\"userid\");",
 							"    ",
 							"",
-							"    console.log(username,userid);",
+							"    console.log(host_url,page);",
 							"});"
 						]
 					}
@@ -381,9 +381,10 @@
 					"",
 					"    var host_url=pm.collectionVariables.get(\"URL\");",
 					"    var page=pm.collectionVariables.get(\"PAGEC\");",
+					"    var page2=pm.collectionVariables.get(\"PAGEC\");",
 					"    ",
 					"",
-					"    console.log(host_url,page);",
+					"    console.log(host_url,page,page2);",
 					"});"
 				]
 			}
@@ -392,7 +393,7 @@
 	"variable": [
 		{
 			"key": "PAGEC",
-			"value": "1"
+			"value": "2"
 		},
 		{
 			"key": "URL",

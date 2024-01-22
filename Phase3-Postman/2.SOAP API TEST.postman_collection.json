@@ -1,13 +1,14 @@
 {
 	"info": {
-		"_postman_id": "e78a564c-43e9-4219-9f9b-392d98274783",
-		"name": "2.SOAP API TEST",
+		"_postman_id": "d1719b51-4bce-442f-b7f8-296cf5e35e4d",
+		"name": "2.SOAP API Test",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-		"_exporter_id": "32313081"
+		"_exporter_id": "32313081",
+		"_collection_link": "https://crimson-robot-501125.postman.co/workspace/API-Automation-Test~424d9ea3-41b9-479b-953f-333e6d39b388/collection/32313081-d1719b51-4bce-442f-b7f8-296cf5e35e4d?action=share&source=collection_link&creator=32313081"
 	},
 	"item": [
 		{
-			"name": "Get Capital By Country Code",
+			"name": "Get capital by country code",
 			"request": {
 				"method": "POST",
 				"header": [
@@ -61,7 +62,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<soap:Envelope xmlns:soap=\"http://schemas.xmlsoap.org/soap/envelope/\">\r\n  <soap:Body>\r\n    <NumberToWords xmlns=\"http://www.dataaccess.com/webservicesserver/\">\r\n      <ubiNum>100050</ubiNum>\r\n    </NumberToWords>\r\n  </soap:Body>\r\n</soap:Envelope>",
+					"raw": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<soap:Envelope xmlns:soap=\"http://schemas.xmlsoap.org/soap/envelope/\">\r\n  <soap:Body>\r\n    <NumberToWords xmlns=\"http://www.dataaccess.com/webservicesserver/\">\r\n      <ubiNum>1000.50</ubiNum>\r\n    </NumberToWords>\r\n  </soap:Body>\r\n</soap:Envelope>",
 					"options": {
 						"raw": {
 							"language": "xml"
@@ -100,7 +101,7 @@
 					"raw": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<soap:Envelope xmlns:soap=\"http://schemas.xmlsoap.org/soap/envelope/\">\r\n  <soap:Body>\r\n    <ListOfContinentsByName xmlns=\"http://www.oorsprong.org/websamples.countryinfo\">\r\n    </ListOfContinentsByName>\r\n  </soap:Body>\r\n</soap:Envelope>",
 					"options": {
 						"raw": {
-							"language": "xml"
+							"language": "json"
 						}
 					}
 				},

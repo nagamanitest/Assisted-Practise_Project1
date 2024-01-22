@@ -1,31 +1,44 @@
 {
 	"info": {
-		"_postman_id": "f9b38d32-64b9-47cf-a66c-88405f7a0cd3",
-		"name": "1.REST API TEST",
+		"_postman_id": "429b8370-f290-4a48-832b-5254b54f123a",
+		"name": "1.REST API Test",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-		"_exporter_id": "32313081"
+		"_exporter_id": "32313081",
+		"_collection_link": "https://crimson-robot-501125.postman.co/workspace/API-Automation-Test~424d9ea3-41b9-479b-953f-333e6d39b388/collection/32313081-429b8370-f290-4a48-832b-5254b54f123a?action=share&source=collection_link&creator=32313081"
 	},
 	"item": [
 		{
-			"name": "Get All User Request",
+			"name": "GET All User Request",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"    var url=pm.environment.get(\"HOST_URL\");\r",
+							"    console.log(url);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
 			"request": {
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://reqres.in/api/users?page=2",
-					"protocol": "https",
+					"raw": "{{HOST_URL}}/users?page={{PAGEC}}",
 					"host": [
-						"reqres",
-						"in"
+						"{{HOST_URL}}"
 					],
 					"path": [
-						"api",
 						"users"
 					],
 					"query": [
 						{
 							"key": "page",
-							"value": "2"
+							"value": "{{PAGEC}}"
 						}
 					]
 				}
@@ -33,7 +46,7 @@
 			"response": []
 		},
 		{
-			"name": "Get One User By User ID",
+			"name": "GET One User By User ID",
 			"request": {
 				"method": "GET",
 				"header": [],
@@ -60,7 +73,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"name\": \"morpheus\",\r\n    \"job\": \"Software Engineer\"\r\n}",
+					"raw": "{\r\n    \"name\": \"morpheus\",\r\n    \"job\": \"leader\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -83,13 +96,13 @@
 			"response": []
 		},
 		{
-			"name": "Update USer By ID",
+			"name": "Update  By User ID",
 			"request": {
 				"method": "PUT",
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"name\": \"morpheus\",\r\n    \"job\": \"Manager\"\r\n}",
+					"raw": "{\r\n    \"name\": \"morpheus\",\r\n    \"job\": \"zion resident\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -113,9 +126,9 @@
 			"response": []
 		},
 		{
-			"name": "Delete By User ID",
+			"name": "Delete user by ID",
 			"request": {
-				"method": "DELETE",
+				"method": "PATCH",
 				"header": [],
 				"body": {
 					"mode": "raw",
@@ -149,7 +162,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"job\":\"Software Tester\"\r\n}",
+					"raw": "{\r\n    \"job\": \"Software tester\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -157,7 +170,7 @@
 					}
 				},
 				"url": {
-					"raw": "https://reqres.in/api/users/1",
+					"raw": "https://reqres.in/api/users/2",
 					"protocol": "https",
 					"host": [
 						"reqres",
@@ -166,11 +179,37 @@
 					"path": [
 						"api",
 						"users",
-						"1"
+						"2"
 					]
 				}
 			},
 			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"value": "",
+			"type": "string"
 		}
 	]
 }
